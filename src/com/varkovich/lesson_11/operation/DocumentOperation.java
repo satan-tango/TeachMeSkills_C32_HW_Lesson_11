@@ -25,8 +25,13 @@ public class DocumentOperation {
     public static StringBuilder getDocumentInSpecifiedFormatInUpperCase(String document) {
         String[] documentArray = document.split("-");
         StringBuilder stringBuilder = new StringBuilder("Letters:");
-        stringBuilder.append(documentArray[1].toUpperCase() + "/" + documentArray[3].toUpperCase() + "/"
-                + documentArray[4].toUpperCase().charAt(1) + "/" + documentArray[4].toUpperCase().charAt(3));
+        stringBuilder.append(documentArray[1].toUpperCase());
+        stringBuilder.append("/");
+        stringBuilder.append(documentArray[3].toUpperCase());
+        stringBuilder.append("/");
+        stringBuilder.append(documentArray[4].toUpperCase().charAt(1));
+        stringBuilder.append("/");
+        stringBuilder.append(documentArray[4].toUpperCase().charAt(3));
 
         return stringBuilder;
     }
