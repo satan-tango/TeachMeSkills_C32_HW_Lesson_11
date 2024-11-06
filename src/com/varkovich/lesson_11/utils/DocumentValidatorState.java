@@ -4,7 +4,7 @@ public enum DocumentValidatorState {
     VALID_DOCUMENT("Document is valid"),
     INVALID_DOCUMENT("Document is invalid");
 
-    String commentary;
+    final String commentary;
 
     DocumentValidatorState(String commentary) {
         this.commentary = commentary;

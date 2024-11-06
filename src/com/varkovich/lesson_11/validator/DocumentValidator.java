@@ -9,7 +9,7 @@ public class DocumentValidator {
             return DocumentValidatorState.INVALID_DOCUMENT;
         }
 
-        document.trim();
+        document = document.trim();
 
         if (document.length() != 22) {
             return DocumentValidatorState.INVALID_DOCUMENT;
